@@ -21,4 +21,4 @@ Algorithm Design: Input: name, room types, and nights
 Hugging Face Link: https://huggingface.co/spaces/JJ2504/HotelGuestCheckIn
 
 Author: Jonathan Jacob
-Acknowledgement: Used AI for help chat link: https://chatgpt.com/c/69388b80-c894-8325-a424-e6ebe3f3abe5
+Acknowledgement: AI Disclaimer: Used AI for help with code. Chat link: https://chatgpt.com/c/69388b80-c894-8325-a424-e6ebe3f3abe5
