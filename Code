@@ -2,21 +2,25 @@ import gradio as gr
 
 guests = []  
 
+#Asked AI how I would put room prices with room types
 room_prices = {
     "Single Room": 120,
     "Double Room": 180,
     "Suite": 300,
 }
 
+#Asked AI for help with check ins
 def check_in(name, room_type, nights):
     try:
         nights = int(nights)
     except:
         return " Nights have to be a number :( "
 
+    #Total Costs    
     cost_per_night = room_prices[room_type]
     total = cost_per_night * nights
 
+    #Asked for AI for help
     guest_info = {
         "name": name.lower(),
         "room": room_type,
@@ -26,6 +30,7 @@ def check_in(name, room_type, nights):
 
     guests.append(guest_info)
 
+    #Asked AI for help with how to organize
     return (
         f" Guest Checked In!\n"
         f"Name: {name}\n"
@@ -34,6 +39,7 @@ def check_in(name, room_type, nights):
         f"Total Bill: ${total}"
     )
 
+#Asked AI to give me an example of how to do it
 def search_guest(name_search):
     name_search = name_search.lower()
 
@@ -49,6 +55,7 @@ def search_guest(name_search):
 
     return " Guest not found."
 
+#Needed Ai's help with gradio language especially the drop down menu for the room types. 
 with gr.Blocks(title="Hotel Guest Check-In System") as demo:
     gr.Markdown("<h1 style='text-align:center;'> Hotel Guest Check-In System</h1>")
 
