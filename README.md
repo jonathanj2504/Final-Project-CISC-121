@@ -9,8 +9,11 @@ Algorithm Name: Linear Search
 <img width="1919" height="606" alt="image" src="https://github.com/user-attachments/assets/d438c096-9169-40e7-91a5-be902b57fefd" />
 
 Decomposition: Checks in guest, calculates cost, store guest info, search for guest
+
 Pattern: Guests use the same field for info, room price calculation
+
 Abstraction: App hides guest list, and calculation details
+
 Algorithm Design: Input: name, room types, and nights
                   Process: Validate nights, calculate total cost, add guest to guest list, and use linear search to search for guests
                   Output: Check In Summary or results from search
